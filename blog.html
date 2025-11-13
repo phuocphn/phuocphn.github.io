@@ -1,0 +1,36 @@
+---
+layout: default
+title: Phuoc Pham (Quick Notes)
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li> -->
+      <li><span>{{ post.date | date_to_string }}</span> &mdash; <a href="{{ post.url }}">{{ post.title }}</a></li>
+
+    {% endfor %}
+  </ul>
+
+<div style="padding-bottom: 30px;"></div>
+
+
+
+
+
+  <!-- <h1>Highlighted Courses</h1>
+  <ul class="posts">
+    <li><span>04 Jun 2025 </span>  &mdash; <a href="https://www.youtube.com/watch?v=gERszKkxZOw&ab_channel=ContentCreators">Article: In Depth CapCut Video Editing Tutorial - Mac & PC 2024</a><i> (planned)</i></li> 
+    <li><span>09 Nov 2011</span> &mdash; <a href="http://vimeo.com/39016099">Video: RubyConf Argentina - Optimizing For Happiness</a></li>
+    <li><span>01 Oct 2011</span> &mdash; <a href="http://confreaks.com/videos/712-rubyconf2011-github-flavored-ruby">Video: RubyConf - GitHub Flavored Ruby</a></li>
+    <li><span>23 Nov 2010</span> &mdash; <a href="http://vimeo.com/17118008">Video: Erlang Factory - Mastering Git Basics</a></li>
+  </ul> -->
+
+
+
+  <h1>Noteworthy Open Source Projects and Specifications</h1>
+  <ul class="posts">
+    <li><a href="https://gist.github.com/parmentf/035de27d6ed1dce0b36a">GitCommitEmoji.md:</a> Celebrate Git commit with a corresponding emoji! 😄.</li>
+  </ul>
+</div>
