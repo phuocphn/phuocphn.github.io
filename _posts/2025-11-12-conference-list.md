@@ -13,11 +13,11 @@ title: Conference & Journal for MLCAD / EDA Research
 ## EDA Conferences
 
 - Jan – [FCCM](https://www.fccm.org/), [ICS](http://www.ics-conference.org/), [ICDCS](https://www.icdcs.org/), [SIGMETRICS (Spring)](https://www.sigmetrics.org/sigmetrics2023/)
-- Feb – [LCTES](https://conf.researchr.org/home/LCTES-2023), [SMACD](https://smacd-conference.org/) , [ISEDA](https://www.eda2.com/iseda/sub.html)
+- Feb – [LCTES](https://conf.researchr.org/home/LCTES-2023), [SMACD](https://smacd-conference.org/) , [ISEDA](https://www.eda2.com/iseda/sub.html), [NewCAS](https://newcas.org/)
 - Mar – [SC](http://sc22.supercomputing.org/), [CDC](http://cdc2022.ieeecss.org/), [ITSC](https://ieee-itss.org/event/itsc2023/), [LAD](https://iclad.ai/)
 - Apr – [ASPLOS (Spring)](https://asplos-conference.org/), [MICRO](https://www.microarch.org/), [CODES+ISSS](http://esweek.org/codes/about), [CASES](http://esweek.org/cases/about/), [EMSOFT](http://www.emsoft.org/)
 - May – [ICCAD](http://iccad.com/), [RTSS](http://2022.rtss.org/), [MLCAD](https://mlcad.org/symposium/2025/)
-- Jun – [AI4FACD](https://ai4facd.github.io/#About), [NEWCAS](https://www.newcas2025.com/), [ICECS](https://ieee-icecs2025.org/)
+- Jun – [AI4FACD](https://ai4facd.github.io/#About), [ICECS](https://ieee-icecs2025.org/)
 - Jul – [ASPDAC](https://www.aspdac.com/aspdac2026/), [LAD](https://iclad.ai/)
 - Aug – [ASPLOS (Summer)](https://www.asplos-conference.org/), [HPCA](https://hpca-conf.org/), [PPoPP](https://conf.researchr.org/home/PPoPP-2023), [SIGMETRICS (Fall)](https://www.sigmetrics.org/sigmetrics2023/)
 - Sept – [DATE](https://www.date-conference.com/), [CGO](https://2026.cgo.org/), [ESWEEK](https://esweek.org/education-classes/), [ISPD](https://ispd.cc/ispd2026/index.php) 
