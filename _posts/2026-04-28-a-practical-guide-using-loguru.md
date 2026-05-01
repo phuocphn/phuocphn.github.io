@@ -144,15 +144,38 @@ Avoid relying on module names entirely:
 # module_a.py
 from loguru import logger
 logger = logger.bind(module="A")
-
-# logger setup
-filter=lambda record, m=module: record["extra"].get("module") == m
+```
+Then filter:
+```python
+def make_filter(module_name):
+    def f(record):
+        return record["extra"].get("module") == module_name
+    return f
 ```
 
-This avoids import-path inconsistencies like:
+This avoids import-path inconsistencies like (100% reliable, regardless of how Python runs your code):
 - `"module_a"`
 - `"myproject.module_a"`
 
+
+## 6. Structured Logging
+- You can extend the default record dict entries to add more context to your log messages.
+- Use loguru's `bind(<name>=<value>)` function to create a logger with extra information and use `{extra[<name>]}` in the format string.
+
+```python
+# structured_logging.py
+import sys
+from loguru import logger
+
+logger.info("Hello from loguru!")
+
+logger.remove(0)
+user_ip = "127.0.0.1"
+logger.add(sys.stderr, format="{time} | {level} | {extra[ip]} | {message}")
+ip_logger = logger.bind(ip=user_ip)
+
+ip_logger.info("Hello from loguru's IP logger!")
+```
 ---
 
 ## 6. Common Pitfalls
@@ -177,4 +200,6 @@ This avoids import-path inconsistencies like:
 ## Final Thought
 
 This setup scales well from small scripts to research codebases (e.g., ML experiments, RL pipelines), while staying readable and maintainable—exactly where Loguru shines.
-```
+
+## References
+- [Logging Made Easy With Loguru - Florian Dahlitz](https://florian-dahlitz.de/articles/logging-made-easy-with-loguru)
